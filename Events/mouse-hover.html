@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse hover event</title>
+</head>
+<body>
+    <img src="pushpa.jpg" height="200px" width="200px" 
+    onmouseover="a()"
+    onmousemove="b()"
+    onmouseout="c()">
+    <script>
+        function a() {
+            console.log(`Mouse over event occured`)
+        }
+
+        function b() {
+            console.log(`Mouse move event occured`)
+        }
+
+        function c() {
+            console.log(`Mouse out event occured`)
+        }
+    </script>
+    
+</body>
+</html>
