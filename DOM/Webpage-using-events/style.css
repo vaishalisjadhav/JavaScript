@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222831;
+    padding: 15px 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-page-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-page-links li {
+    margin: 0 10px;
+}
+
+.navbar-page-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar-page-links a:hover {
+    color: #00ADB5;
+}
+
+.heading1 {
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    height: 370px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 50px;
+    text-align: center;
+    padding: 15px;
+    background-color: #00ADB5;
+}
+
+/* .box:hover{
+    box-shadow: #222831 2px 2px;
+} */
+
+.box img{
+    height: 150px;
+    width: 150px;
+    margin-top: -60px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+/* .box img:hover{
+    height: 200px;
+    width: 200px;
+} */
+
+.box h3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.box p{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #222831;
+}
+
+.box button{
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    border-radius: 20px 20px;
+    margin: auto;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.box button:hover{
+   border: 2px solid black;
+}
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+    .navbar-page-links ul{
+        display: none;
+    }
+    .box-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 20px 50px; 
+    }
+}
