@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Matcher</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app-container">
@@ -15,10 +16,14 @@
         </div>
 
         <p class="match-result" id="match-result-text"></p>
+
+        <button class="btn" id="check-btn" onclick="Check()">Check</button>
+        <button class="btn" id="clear-btn" onclick="Clear()">Clear</button>
+
     </div>
 
     <script>
-        function compareText() {
+        function Check() {
             const input1Ele = document.getElementById("input1")
             const input2Ele = document.getElementById("input2")
 
@@ -31,8 +36,18 @@
             else{
                 resultEle.innerText = "Not Matched!!"
                 resultEle.style.color = "red"
-            }
-            
+            }            
+        }
+
+        function Clear() {
+            const input1Ele = document.getElementById("input1")
+            input1Ele.value= ""
+
+            const input2Ele = document.getElementById("input2")
+            input2Ele.value= ""
+
+            const resultEle = document.getElementById("match-result-text")
+            resultEle.innerText= ""
         }
     </script>
 </body>
